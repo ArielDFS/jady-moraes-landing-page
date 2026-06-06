@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-import Image from 'next/image'
 import { NAV_LINKS } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
@@ -32,15 +31,18 @@ export function Navbar() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <a href="/" className="flex items-center group">
-              <Image
-                src="/images/logo.png"
-                alt="Jady Moraes — Leitura Crítica"
-                width={120}
-                height={60}
-                className="h-12 w-auto object-contain transition-opacity duration-200 group-hover:opacity-80"
-                priority
-              />
+            <a href="/" className="flex flex-col items-center group select-none" style={{ gap: '2px' }}>
+              <span className="font-playfair font-semibold text-wine leading-none tracking-tight transition-opacity duration-200 group-hover:opacity-75" style={{ fontSize: '1.35rem' }}>
+                Jady Moraes
+              </span>
+              <div className="flex items-center gap-1.5 w-full">
+                <div className="flex-1 h-px bg-wine/30" />
+                <div className="w-1 h-1 rotate-45 bg-wine/50" />
+                <div className="flex-1 h-px bg-wine/30" />
+              </div>
+              <span className="font-inter text-wine/60 uppercase tracking-[0.18em] leading-none transition-opacity duration-200 group-hover:opacity-75" style={{ fontSize: '0.52rem' }}>
+                Leitura Crítica
+              </span>
             </a>
 
             {/* Desktop Links */}

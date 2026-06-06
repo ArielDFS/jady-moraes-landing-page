@@ -21,7 +21,7 @@ export function About() {
               {/* Photo */}
               <div className="relative w-full aspect-[4/5] max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden shadow-warm-xl">
                 <Image
-                  src="/images/about-photo.png"
+                  src="/images/hero-photo.png"
                   alt="Jady Moraes lendo um manuscrito"
                   fill
                   className="object-cover object-center"

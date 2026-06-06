@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
     'Leitura crítica profissional para autores que desejam aprimorar seus manuscritos. Análise narrativa, desenvolvimento de personagens, ritmo e muito mais.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://jadymoraes.com.br',
   email: 'contato@jadymoraes.com.br',
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999',
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5524999352142',
   instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/jadymoraes',
   whatsappMessage: 'Olá, Jady! Gostaria de saber mais sobre seu serviço de leitura crítica.',
 }

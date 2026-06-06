@@ -22,7 +22,8 @@
       "PowerShell(Stop-Process -Id 13448 -Force)",
       "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\",\"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\",\"$env:LOCALAPPDATA\\\\Programs\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output $p } })",
       "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
-      "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\",\"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output $p; break } })"
+      "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\",\"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output $p; break } })",
+      "PowerShell(Stop-Process -Force)"
     ]
   }
 }

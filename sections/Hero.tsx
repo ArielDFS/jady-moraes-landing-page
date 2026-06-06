@@ -145,7 +145,7 @@ export function Hero() {
               {/* Main photo container */}
               <div className="relative w-72 h-96 sm:w-80 sm:h-[28rem] lg:w-96 lg:h-[32rem] rounded-3xl overflow-hidden shadow-warm-xl">
                 <Image
-                  src="/images/hero-photo.png"
+                  src="/images/about-photo.jpeg"
                   alt="Jady Moraes — Leitura Crítica Literária"
                   fill
                   className="object-cover object-center"
