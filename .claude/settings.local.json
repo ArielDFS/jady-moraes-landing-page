@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(\\(Get-Command node -ErrorAction SilentlyContinue\\).Source; \\(Get-Command npm -ErrorAction SilentlyContinue\\).Source; $env:PATH -split ';' | Select-String -Pattern 'node|npm' -SimpleMatch)",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue; Get-ChildItem \"C:\\\\Program Files \\(x86\\)\\\\nodejs\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object -First 5; Get-ChildItem \"C:\\\\Users\\\\DELL\\\\AppData\\\\Roaming\\\\nvm\" -ErrorAction SilentlyContinue | Select-Object -First 5)",
+      "PowerShell(Test-Path \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\"; if \\(Test-Path \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\"\\) { \\(Get-ChildItem \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\" | Measure-Object\\).Count })",
+      "PowerShell(Test-Path \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\.bin\"; \\(Get-Item \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\.bin\"\\).Attributes)",
+      "PowerShell(cmd /c \"dir /a \"\"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\.bin\"\" | findstr next\")",
+      "PowerShell(cmd /c \"dir /a \"\"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\.bin\"\"\")",
+      "PowerShell(Test-Path \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\next\\\\dist\\\\server\\\\require-hook.js\"; \\(Get-ChildItem \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\next\\\\dist\\\\server\" -ErrorAction SilentlyContinue | Measure-Object\\).Count)",
+      "PowerShell(Start-Process -FilePath \"cmd.exe\" -ArgumentList \"/c\", \"rmdir /s /q `\"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules`\"\" -Wait -NoNewWindow)",
+      "PowerShell(\\(Get-ChildItem \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\next\\\\dist\\\\server\" -ErrorAction SilentlyContinue\\).Name)",
+      "PowerShell(\\(Get-ChildItem \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\next\\\\dist\" -ErrorAction SilentlyContinue\\).Name)",
+      "PowerShell(for \\($i = 0; $i -lt 5; $i++\\) { Start-Process -FilePath \"cmd.exe\" -ArgumentList \"/c\", \"rmdir /s /q `\"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules`\"\" -Wait -NoNewWindow; if \\(-not \\(Test-Path \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\"\\)\\) { break }; Start-Sleep -Seconds 2 }; Test-Path \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\")",
+      "PowerShell(Start-Sleep -Seconds 30; Get-Content \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-DELL-Desktop-Landing-Page\\\\51f4eff6-f904-4c40-b4d5-c5f29352ffac\\\\tasks\\\\b7t9lnw1s.output\" -Tail 5; echo \"---server files:\"; \\(Get-ChildItem \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\node_modules\\\\next\\\\dist\\\\server\" -ErrorAction SilentlyContinue | Measure-Object\\).Count)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;$env:PATH\"; cd \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\"; & \"C:\\\\Program Files\\\\nodejs\\\\npm.cmd\" install 2>&1 | Select-Object -Last 10)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;$env:PATH\"; cd \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\"; & \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" \".\\\\node_modules\\\\next\\\\dist\\\\bin\\\\next\" dev)",
+      "PowerShell(Rename-Item \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\\\\public\\\\images\\\\logo.png.png\" \"logo.png\")",
+      "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Id 13612 -Force)",
+      "PowerShell(Stop-Process -Id 13536 -Force)",
+      "PowerShell(Stop-Process -Id 13448 -Force)",
+      "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\",\"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\",\"$env:LOCALAPPDATA\\\\Programs\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output $p } })",
+      "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
+      "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\",\"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output $p; break } })"
+    ]
+  }
+}
