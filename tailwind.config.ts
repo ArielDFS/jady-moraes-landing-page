@@ -11,12 +11,12 @@ const config: Config = {
     extend: {
       colors: {
         cream: {
-          DEFAULT: '#FAF7F2',
-          50: '#FFFEF9',
-          100: '#FAF7F2',
-          200: '#F2EDE3',
-          300: '#EDE8DF',
-          400: '#E0D8CB',
+          DEFAULT: '#F8F9FA',
+          50: '#FFFFFF',
+          100: '#F8F9FA',
+          200: '#EFF2F5',
+          300: '#E4EAF0',
+          400: '#D8E2EC',
         },
         wine: {
           DEFAULT: '#2D6475',
@@ -40,8 +40,8 @@ const config: Config = {
           light: '#1E2F45',
         },
         beige: {
-          DEFAULT: '#EDE8DF',
-          warm: '#E8E0D0',
+          DEFAULT: '#E4EAF0',
+          warm: '#D8E2EC',
         },
       },
       fontFamily: {
