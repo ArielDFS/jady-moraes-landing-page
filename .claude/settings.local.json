@@ -23,7 +23,8 @@
       "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\",\"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\",\"$env:LOCALAPPDATA\\\\Programs\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output $p } })",
       "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
       "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\",\"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output $p; break } })",
-      "PowerShell(Stop-Process -Force)"
+      "PowerShell(Stop-Process -Force)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;$env:PATH\"; cd \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Landing Page\"; & \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" \".\\\\node_modules\\\\next\\\\dist\\\\bin\\\\next\" dev --hostname 0.0.0.0)"
     ]
   }
 }
