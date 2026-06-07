@@ -1,6 +1,6 @@
 'use client'
 
-import { BookOpen, Mail, Instagram, MessageCircle, Heart } from 'lucide-react'
+import { Mail, Instagram, MessageCircle, Heart } from 'lucide-react'
 import { SITE_CONFIG, NAV_LINKS } from '@/lib/constants'
 import { buildWhatsAppUrl } from '@/lib/whatsapp'
 
@@ -15,16 +15,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2 flex flex-col gap-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-wine flex items-center justify-center">
-                <BookOpen size={18} className="text-gold" />
+            <div className="flex flex-col items-center w-fit select-none" style={{ gap: '3px' }}>
+              <span className="font-playfair font-semibold text-wine leading-none tracking-tight" style={{ fontSize: '1.35rem' }}>
+                Jady Moraes
+              </span>
+              <div className="flex items-center gap-1.5 w-full">
+                <div className="flex-1 h-px bg-wine/40" />
+                <div className="w-1 h-1 rotate-45 bg-wine/60" />
+                <div className="flex-1 h-px bg-wine/40" />
               </div>
-              <div>
-                <p className="font-playfair font-bold text-xl text-cream-50">Jady Moraes</p>
-                <p className="font-inter text-xs text-cream-400/60 uppercase tracking-widest">
-                  Leitura Crítica Literária
-                </p>
-              </div>
+              <span className="font-inter text-wine/70 uppercase tracking-[0.18em] leading-none" style={{ fontSize: '0.52rem' }}>
+                Leitura Crítica
+              </span>
             </div>
 
             <p className="font-lora text-cream-300/70 text-sm leading-relaxed max-w-sm">

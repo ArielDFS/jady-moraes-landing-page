@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
     const contactEmail = process.env.CONTACT_EMAIL || 'contato@jadymoraes.com.br'
 
     await resend.emails.send({
-      from: 'Formulário do Site <noreply@jadymoraes.com.br>',
+      from: 'Formulário do Site <onboarding@resend.dev>',
       to: [contactEmail],
       replyTo: email,
       subject: `Nova mensagem de ${name} — ${genre}`,
